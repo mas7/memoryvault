@@ -30,7 +30,5 @@ class QuizControllerTest extends TestCase
         $this->actingAs($this->user);
         $res = $this->postJson('/api/v1/quizzes/start')
             ->assertOk();
-
-        dd($res->json());
     }
 }
